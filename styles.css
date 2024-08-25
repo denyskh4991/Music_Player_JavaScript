@@ -16,7 +16,7 @@
 }
 
 .music-player {
-    background: #fff;
+    background: #fffaf0;
     width: 400px;
     padding: 25px 35px;
     text-align: center;
@@ -68,10 +68,36 @@ nav .circle {
 
 #progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: green;
+    background: #fff;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 8px solid black;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: black;
+    color: #fff;
 }
